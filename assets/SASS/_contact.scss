@@ -1,0 +1,40 @@
+@import "./variables";
+#contact{
+    padding: 100px 0;
+    background-color: $nthdivcolor;
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+    .title_f{
+        width: 533px;
+        @media (max-width:590px) {
+            width: 100%;
+            font-size: 1.8rem;
+        }
+    }
+    p{
+        width: 514px;
+        font-size: 1.15rem;
+        line-height: 24px;
+        color: $textColor;
+        @media (max-width:590px) {
+            width: 100%;
+        }
+    }
+    .button{
+        display: flex;
+        gap: 20px;
+    }
+    .btn{
+        border: solid $textColor;
+        color: $textColor;
+        &:hover{
+            background-color: $textColor;
+            color: $mainColor;
+        }
+    }
+}

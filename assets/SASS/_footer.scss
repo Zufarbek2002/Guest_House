@@ -1,0 +1,67 @@
+@import "./variables";
+#footer{
+    background-color: $textColor;
+    padding: 100px 0;
+    .footer_section{
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: left;
+        color: $mainColor;
+        row-gap: 80px;
+    }   
+    .footer_box{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 280px;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+    a{
+        color: $mainColor;
+    }
+    .footer_icon{
+        display: flex;
+        gap: 28px;
+        padding-top: 20px;
+
+    }
+    .form{
+        width: 560px;
+        form{
+            display: flex;
+            input{
+                width: 80%;
+                padding: 16px 30px;
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                outline: none;
+                border: none;
+                
+            }
+            button{
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                padding: 10px 30px;
+                border: 10px solid #fff;
+                background-color: $textColor;
+                color: $mainColor;
+                font-size: 1.15rem;
+                cursor: pointer;
+            }
+        }
+    }
+    .logo{
+        align-items: center;
+        width: 100%;
+    }
+    h1{
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}

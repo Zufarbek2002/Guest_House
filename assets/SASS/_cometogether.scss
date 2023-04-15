@@ -1,0 +1,45 @@
+@import "./variables";
+#cometogether{
+    padding: 100px 0;
+    .cometogether_showcase{
+        display: flex;
+        gap: 64px;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:750px) {
+            flex-direction: column;
+        }
+    }
+    .come_boxes_left{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 514px;
+        @media (max-width:600px) {
+            width: 100%;
+        }
+        p{
+                font-size: 1.15rem;
+                color: $textColor;
+                line-height: 24px;
+        }
+    }
+    .come_boxes_right{
+        display: flex;
+        width: 552px;
+        gap: 60px 32px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        @media (max-width:600px) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    .come_box{
+        display: flex;
+        width: 250px;
+        gap: 10px;
+        color: $textColor;
+    }
+}

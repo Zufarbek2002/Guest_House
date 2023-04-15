@@ -1,0 +1,45 @@
+@import "./variables";
+#escape{
+    padding: 100px 0;
+    .escape_section{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    p{
+        width: 554px;
+        padding-right: 46px;
+        font-size: 1.15rem;
+        color: $textColor;
+        @media (max-width:630px) {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+    .escape_boxes{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 32px;
+        @media (max-width:710px) {
+            flex-direction: column;
+        }
+    }
+    .escape_box{
+        display: flex;
+        gap: 16px;
+        align-items: start;
+        width: 50%;
+        @media (max-width:710px) {
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            font-size: 1rem;
+            color: $extratextColor;
+        }
+        h1{
+            color: $textColor;
+        }
+    }
+}
